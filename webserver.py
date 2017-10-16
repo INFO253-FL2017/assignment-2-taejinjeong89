@@ -69,7 +69,7 @@ def send_email():
         data=data)
     
     if r.status_code == requests.codes.ok:
-        notifications.append("Your email was sent")
+        notifications.append("Hi" + firstname + " " + lastname + ", your email was sent")
     else:
         notifications.append("You email was not sent. Please try again later")
 
