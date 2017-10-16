@@ -60,11 +60,11 @@ def send_email():
         'from': os.environ["INFO253_MAILGUN_FROM_EMAIL"],
         'to': os.environ["INFO253_MAILGUN_TO_EMAIL"],
         'subject': subject,
-        'text': "Subject = " + subject + "\n" + "Firstname = " + firstname + "\n" + "Last name = " + lastname + "\n" + "Message = " + message,
-    }
+        'text': "Subject = " + subject + "\n" + "Firstname = " + firstname + "\n" + "Last name = " + lastname + "\n" + "Message = " + message
+        }
 
     r = requests.post(
-        'https://api.mailgun.net/v3/sandboxc745f29f942e471fbac4c8695dc8bff1.mailgun.org/messages'.format(os.environ["INFO253_MAILGUN_DOMAIN"]),
+        'https://api.mailgun.net/v3/{}/messages'.format(os.environ["INFO253_MAILGUN_DOMAIN"]),
         auth=auth,
         data=data)
     
