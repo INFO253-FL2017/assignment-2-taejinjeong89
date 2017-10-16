@@ -1,0 +1,33 @@
+h1{
+	color: black;
+	text-align: center;
+}
+ul{
+	text-align: left;
+	list-style-position: inside;
+}
+li{
+	list-style-type: circle;
+}
+head{
+	text-align: left;
+	color: black;
+}
+header{
+	text-align: left;
+}
+footer{
+	color: black;
+	text-align: right;
+}
+html{
+	background-color: #b3ffff;
+}
+form{
+	text-align: center;
+}
+
+
+
+
+
